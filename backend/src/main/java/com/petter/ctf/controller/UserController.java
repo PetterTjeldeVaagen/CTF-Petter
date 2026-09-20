@@ -39,7 +39,7 @@ public class UserController {
 
     @GetMapping("/search")
     public ResponseEntity<?> search(@RequestParam(defaultValue = "") String query) {
-        String sql = "SELECT id, username, password FROM users WHERE username = '" + query + "'";
+        String sql = "SELECT id, username FROM users WHERE username = '" + query + "'";
 
         try (Connection conn = connectionFactory.getConnection();
              Statement stmt = conn.createStatement();

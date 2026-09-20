@@ -35,7 +35,7 @@ const createUser = async () => {
 </script>
 
 <template>
-  <h1>SQL Injection CTF</h1>
+  <h1>CTF</h1>
 
   <h2>Search users</h2>
   <input type="text" v-model="searchQuery">
